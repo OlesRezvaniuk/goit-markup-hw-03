@@ -210,7 +210,7 @@ body {
 /* team members */
 .team {
     text-align: center;
-    background-color: var(--community-bg-color);
+    background-color: var(--white-text-color));
 
     padding: 94px 200px;
 }
