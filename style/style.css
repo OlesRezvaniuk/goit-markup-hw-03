@@ -705,3 +705,58 @@ background-color: var(--white-text-color);
 .footer-icon {
     fill: var(--white-text-color);
 }
+
+/* backdrop >*/
+
+.backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* modal> */
+
+.modal {
+    position: absolute;
+    content: "";
+    height: 581px;
+    width: 528px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: var(--white-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.close-button {
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    right: 8px;
+    top: 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: var(--white-text-color);
+}
+
+.close-icon {
+    width: 18px;
+    height: 18px;
+
+}

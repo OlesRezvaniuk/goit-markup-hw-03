@@ -19,7 +19,7 @@
 
 <body>
     <!-- шапка -->
-        <header>
+    <header>
             <div class="header contanier">
                 <a href="./index.html" class="logo-main">Web<span class="logo-second">Studio</span></a>
                 <nav class="header-nav">
@@ -50,14 +50,14 @@
                     </li>
                 </ul>
             </div>
-        </header>
+    </header>
     <!-- основа -->
-        <main>
+    <main>
             <!-- hero -->
             <section class="hero">
                 <div class="contanier">
                     <h1 class="title">Эффективные решения<br>для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button data-modal-open type="button" class="button">Заказать услугу</button>
                 </div>
             </section>
             <!-- features -->
@@ -332,9 +332,9 @@
                     </ul>
                 </div>
             </section>
-        </main>
+    </main>
     <!-- пол -->
-        <footer class="footer">
+    <footer class="footer">
             <div class="footer-contanier contanier">
                 <div class="left">
                     <a href="./index.html" class="logo-main">Web<span class="logo-second footer-second">Studio</span></a>
@@ -385,7 +385,17 @@
                     </div>
                 </div>
             </div>
-        </footer>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close type="button" class="close-button">
+                <svg class="close-icon">
+                    <use href="./images/symbol-defs-min.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
