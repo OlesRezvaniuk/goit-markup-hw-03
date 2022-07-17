@@ -14,11 +14,7 @@
     --background-color: #2F303A;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+
 
 * {
     padding: 0;
@@ -38,6 +34,7 @@ body {
 
 .contanier {
     width: 1200px;
+    padding: 0px 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -72,16 +69,17 @@ body {
 
 .header-pages .link {
     display: block;
-    margin-left: 50px;
     padding: 32px 0px;
-}
 
-.header-pages .link {
     text-decoration: none;
     color: var(--heavy-text-color);
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
+}
+
+.header-pages .item+.item {
+    margin-left: 50px;
 }
 
 /* активна сторінка */
@@ -176,6 +174,14 @@ body {
 
 .features-list .item {
     width: 270px;
+
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.features-list .item+.item {
+    margin-left: 30px;
 }
 
 .features-list .features-title {
@@ -189,6 +195,8 @@ body {
     margin-bottom: 10px;
 }
 
+.
+
 .features .item+.item {
     margin-left: 30px;
 }
@@ -196,6 +204,7 @@ body {
 /* work */
 .works {
     padding-top: 94px;
+    padding-bottom: 94px;
     text-align: center;
 }
 
@@ -224,8 +233,7 @@ body {
     text-align: center;
     background-color: var(--community-bg-color);
 
-    padding: 94px;
-    margin-top: 94px;
+    padding: 94px 0px;
 }
 
 .team-title {
@@ -283,15 +291,11 @@ background-color: var(--white-text-color);
 /* <<<<<<<<<<Main page - studio <<<<<<<<<<<*/
 /*>>>>>>>>>second page community>>>>>>>>> */
 .page-second {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding: 94px 0px;
 }
 
 .portfolio-header {
-    padding: 0px 215px;
     border-bottom: 1px solid #ECECEC;
-    
-    margin-bottom: 94px;
 }
 /* buttons */
 .button-list {
@@ -299,6 +303,7 @@ background-color: var(--white-text-color);
     justify-content: center;
 
     margin-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .community-button {
