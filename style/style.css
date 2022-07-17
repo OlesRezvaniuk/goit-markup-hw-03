@@ -97,6 +97,10 @@ body {
     display: flex;
     margin-left: auto;
 }
+.header-address .item {
+    display: inline-flex;
+    align-items: center;
+}
 
 .header-link {
     text-decoration: none;
@@ -111,6 +115,20 @@ body {
 .header-address .item+.item {
     margin-left: 50px;
 }
+
+
+.header-icon {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.smartphone {
+    height: 16px;
+    width: 10px;
+}
+
 
 /* ---------------header------------------ */
 
@@ -195,7 +213,6 @@ body {
     margin-bottom: 10px;
 }
 
-.
 
 .features .item+.item {
     margin-left: 30px;
@@ -219,6 +236,23 @@ body {
 
     color: var(--heavy-text-color);
 }
+
+.item-contanier {
+    height: 120px;
+    background-color: var(--community-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+}
+  
+.item-icon {
+    width: 70px;
+    height: 70px;
+}
+/* work */
 
 .work-list {
     display: flex;
@@ -287,7 +321,42 @@ background-color: var(--white-text-color);
 
 }
 
+.social-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
 
+.social-list .item+.item {
+    margin-left: 10px;
+}
+
+.social-list .item {
+    display: flex;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+}
+
+.social-link:hover {
+    background-color: var(--action-text-color);
+    border-radius: 50%;
+    color: var(--white-text-color);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
 /* <<<<<<<<<<Main page - studio <<<<<<<<<<<*/
 /*>>>>>>>>>second page community>>>>>>>>> */
 .page-second {
@@ -346,6 +415,11 @@ background-color: var(--white-text-color);
     margin: 0px auto;
 }
 
+.example-list .item:hover {
+    outline: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .example-list .photo-title {
     font-weight: 700;
     font-size: 18px;
@@ -374,6 +448,56 @@ background-color: var(--white-text-color);
     color: var(--main-text-color);
 }
 
+/* clients>>>>>>>>>>>>>>>>>>>>> */
+
+.clients {
+    padding: 94px 0px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--heavy-text-color);
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients-list .item {
+
+    outline: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: currentColor;
+}
+
+.clients-link:hover {
+    color: var(--action-text-color);
+}
+
+.clients-list .item+.item {
+    margin-left: 30px;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
 /*<<<<<<<<<<<second page - community<<<<<<<< */
 
 /* >>>>>>>>>>>>>>> footer >>>>>>>>>>>>>>> */
@@ -383,6 +507,12 @@ background-color: var(--white-text-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-contanier {
+    display: flex;
+}
+ 
+/* footer-left>>>>>>>>>>>>>>>>>>> */
 
 .footer .logo-main {
     margin-bottom: 20px;
@@ -421,4 +551,30 @@ background-color: var(--white-text-color);
 
 .address-list .item+.item {
     margin-top: 10px;
+}
+
+/* footer-center>>>>>>>>>>>>>>>>> */
+
+.footer-contanier .center {
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.join-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+}
+
+.footer-social .item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon {
+    fill: var(--white-text-color);
 }
